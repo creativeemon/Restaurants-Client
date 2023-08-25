@@ -2,7 +2,7 @@
 
 const Banner2 = () => {
   return (
-    <div className=" mb-10">
+    <div className=" my-10">
       <div
         className="hero h-[504px]"
         style={{

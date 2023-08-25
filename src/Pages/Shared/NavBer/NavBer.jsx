@@ -1,10 +1,24 @@
+import { Link } from "react-router-dom";
+
 const NavBer = () => {
   const navOption = (
     <>
       <li>
-        <a>Item 1</a>
+        <li><Link to="/">Home</Link></li>
       </li>
-      <li tabIndex={0}>
+      <li>
+        <Link to="about">About</Link>
+      </li>
+      <li>
+        <Link to="dashboard">Dashboard</Link>
+      </li>
+      <li>
+        <Link to="login">Login</Link>
+      </li>
+      <li>
+        <Link to="signup">Sign Up</Link>
+      </li>
+      {/* <li tabIndex={0}>
         <details>
           <summary>Parent</summary>
           <ul className="p-2">
@@ -16,7 +30,7 @@ const NavBer = () => {
             </li>
           </ul>
         </details>
-      </li>
+      </li> */}
       <li>
         <a>Item 3</a>
       </li>
