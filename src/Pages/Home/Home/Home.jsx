@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import SectionNumber from "../../../Components/SectionTitle/SectionNumber";
 import Banner from "../Banner/Banner";
 import Banner2 from "../Banner/Banner2/Banner2";
@@ -9,14 +10,23 @@ import Category from "../category/category";
 const Home = () => {
   return (
     <div>
-    <Banner></Banner>
-    <Category></Category>
-    <Banner2></Banner2>
-    <PopularMenu></PopularMenu>
-    <SectionNumber></SectionNumber>
+      {/**************************** React Helmet title Add **********************/}
+      <Helmet>
+        <title>Restaurant || Home</title>
+      </Helmet>
+      {/**************************** React Helmet title Add **********************/}
 
-    <Featured></Featured>
-    <Testimonials></Testimonials>
+      {/************************* Home Component add ***************************/}
+      <Banner></Banner>
+      <Category></Category>
+      <Banner2></Banner2>
+      <PopularMenu></PopularMenu>
+      <SectionNumber></SectionNumber>
+
+      <Featured></Featured>
+      <Testimonials></Testimonials>
+      {/************************* Home Component add ***************************/}
+
     </div>
   );
 };

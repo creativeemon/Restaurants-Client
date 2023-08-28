@@ -5,7 +5,7 @@ import NavBer from "../Pages/Shared/NavBer/NavBer";
 const Main = () => {
   const location = useLocation();
     // console.log(location)
-    const noHeaderFooter = location.pathname.includes('login') || location.pathname.includes('signup')
+    const noHeaderFooter = location.pathname.includes('/login') || location.pathname.includes('/signup')
   return (
     <div>
       {noHeaderFooter || <NavBer></NavBer>}

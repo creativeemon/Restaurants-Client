@@ -7,16 +7,14 @@ const NavBer = () => {
         <li><Link to="/">Home</Link></li>
       </li>
       <li>
-        <Link to="about">About</Link>
+        <li><Link to="/menu">Our Menu</Link></li>
+      </li>
+     
+      <li>
+        <Link to="/login">Login</Link>
       </li>
       <li>
-        <Link to="dashboard">Dashboard</Link>
-      </li>
-      <li>
-        <Link to="login">Login</Link>
-      </li>
-      <li>
-        <Link to="signup">Sign Up</Link>
+        <Link to="/signup">Sign Up</Link>
       </li>
       {/* <li tabIndex={0}>
         <details>
@@ -31,15 +29,15 @@ const NavBer = () => {
           </ul>
         </details>
       </li> */}
-      <li>
+      {/* <li>
         <a>Item 3</a>
-      </li>
+      </li> */}
     </>
   );
 
   return (
     <>
-      <div className="navbar fixed z-10 max-w-screen-xl  bg-black text-white bg-opacity-30">
+      <div className="navbar fixed z-10 max-w-screen-xl   bg-black text-white bg-opacity-30">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -67,14 +65,14 @@ const NavBer = () => {
           </div>
           <a className="btn btn-ghost uppercase  text-xl">Restaurant</a>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex items-center">
           <ul className="menu menu-horizontal px-1">{navOption}</ul>
         </div>
         <div className="navbar-end">
           <a className="btn text-white bg-red-600 border-none">Button</a>
         </div>
       </div>
-    </>
+    </> 
   );
 };
 
